@@ -20,3 +20,5 @@ formato = string.format(
     string3=c
 )
 print(formato);
+
+print("%s, você tem %i e sua altura é de %.2f" %(nome, idade, altura));
