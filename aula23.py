@@ -1,5 +1,5 @@
 pessoa = {
-    "nome": "Matheus",
+    "nom": "Matheus",
     "sobrenome": "Madureira",
     "idade": 20,
     "Endereco":[
@@ -8,7 +8,8 @@ pessoa = {
     ]
 }
 
-print(pessoa["nome"])
+#print(pessoa["nome"])
+print(pessoa.get("nome", "none"))
 
 for chave in pessoa:
     print(chave, pessoa[chave], sep=": ")
