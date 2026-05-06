@@ -28,12 +28,12 @@ class Fabricante:
      def __init__(self, nome):
         self.nome = nome
         
-onix = Carro("Celta")
+celta = Carro("Celta")
 chevrolet = Fabricante("Chevrolet")
 motor_1 = Motor("1.0")
-onix.fabricante = chevrolet
-onix.motor = motor_1
-print(onix.nome, onix.fabricante.nome, onix.motor.nome)
+celta.fabricante = chevrolet
+celta.motor = motor_1
+print(celta.nome, celta.fabricante.nome, celta.motor.nome)
 
 onix = Carro("Onix")
 motor_1_4 = Motor("1.4")
