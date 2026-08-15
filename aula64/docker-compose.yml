@@ -1,0 +1,21 @@
+version: '3.9'
+services:
+  mysql_64:
+    env_file:
+      - .env
+    container_name: mysql_64
+    hostname: mysql_64
+    image: mysql:8.0
+    command:
+      - --default-authentication-plugin=mysql_native_password
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - dados_mysql_novo:/var/lib/mysql
+    ports:
+      - 3306:3306
+    environment:
+      TZ: America/Sao_Paulo
+
+volumes:
+  dados_mysql_novo:
